@@ -9,10 +9,10 @@ export default defineNuxtConfig({
   },
   hooks: {
     "vite:extendConfig"(config, { isClient }) {
-      if (process.env.NODE_END !== "development" && isClient) {
-        //@ts-ignore
+      if (process.env.NODE_ENV !== "development" && isClient) {
+        //  @ts-ignore
         config.build.rollupOptions.output.chunkFileNames = "_nuxt/[hash].js";
-        //@ts-ignore
+        //  @ts-ignore
         config.build.rollupOptions.output.entryFileNames = "_nuxt/entry.[hash].js";
       }
     }
