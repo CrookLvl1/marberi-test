@@ -81,7 +81,6 @@ export default defineNuxtConfig({
 
   vite: {
     plugins: [eslintPlugin()],
-    base: 'https://master--dashing-bienenstitch-8d4c6f.netlify.app/',
     css: {
       preprocessorOptions: {
         scss: {
