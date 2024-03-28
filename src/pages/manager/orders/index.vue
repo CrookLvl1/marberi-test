@@ -2,7 +2,7 @@
   <FixedLeftColumn sticky>
     <template #fixed>
       <div class="fixed-left-wrapper">
-        <Button :color="'gray'">
+        <Button class="mobile-button" :color="'gray'">
           <span>Назад</span>
         </Button>
         <div class="block orders-block orders-block-1">
@@ -131,4 +131,5 @@ const applySelectedYear = (_ev: MouseEvent, reset = false) => {
 
 <style lang="scss" scoped>
 @import "~/shared/assets/styles/pages/manager/orders/fixed-left.scss";
+
 </style>

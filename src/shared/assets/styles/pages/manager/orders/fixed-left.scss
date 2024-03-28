@@ -2,6 +2,14 @@
   display: flex;
   flex-direction: column;
   gap: 15px;
+
+  .mobile-button {
+    display: block;
+    @include start-at(lg) {
+      display: none;
+    }
+  }
+
   .orders-block {
     padding: 16px;
     display: flex;

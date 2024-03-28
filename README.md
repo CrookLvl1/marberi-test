@@ -5,24 +5,24 @@ Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introdu
 ## Созданные и (или) изменённые файлы:
 ### ~/pages/manager/orders/
 
-[id_orders].vue
-consts.ts
-index.vue
-OrdersList.vue
-store.ts
-type.ts
-utils.ts
+[id_orders].vue <br />
+consts.ts <br />
+index.vue <br />
+OrdersList.vue <br />
+store.ts <br />
+type.ts <br />
+utils.ts <br />
 
 ### ~/shared/styles/pages/manager/orders/
 
-card.scss
-fixed-content.scss
-fixed-left.scss
+card.scss <br />
+fixed-content.scss <br />
+fixed-left.scss <br />
 
 ### PROJECT__DIR/pages/manager/orders/
 
-[id_orders].vue
-index.vue
+[id_orders].vue <br />
+index.vue <br />
 
 
 ## Setup

@@ -4,6 +4,6 @@
   </main>
 </template>
 
-<script setup>
+<script lang="ts" setup>
 import OrdersPage from "~/pages/manager/orders/index.vue";
 </script>
