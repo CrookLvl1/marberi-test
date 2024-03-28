@@ -59,7 +59,6 @@ export default defineNuxtConfig({
   },
 
   app: {
-    baseURL: "dashing-bienenstitch-8d4c6f.netlify.app",
     head: {
       htmlAttrs: {
         lang: "ru"
