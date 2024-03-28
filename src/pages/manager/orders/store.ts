@@ -12,7 +12,6 @@ export default defineStore("orders-store", () => {
       return responseObj.response.data;
     })
     .then(data => data.orders.forEach(element => orders.push(element)))
-    .catch(console.warn);
 
   const getOrders = computed(() => orders);
   return {
