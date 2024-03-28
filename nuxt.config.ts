@@ -6,6 +6,16 @@ export default defineNuxtConfig({
   devtools: {
     enabled: true
   },
+  hooks: {
+    "vite:extendConfig"(config, { isClient }) {
+      if (process.env.NODE_END !== "development" && isClient) {
+        //@ts-ignore
+        config.build.rollupOptions.output.chunkFileNames = "_nuxt/[hash].js";
+        //@ts-ignore
+        config.build.rollupOptions.output.entryFileNames = "_nuxt/entry.[hash].js";
+      }
+    }
+  },
   nitro: {
     // preset: 'node-server',
   },
@@ -49,6 +59,7 @@ export default defineNuxtConfig({
   },
 
   app: {
+    baseURL: "dashing-bienenstitch-8d4c6f.netlify.app",
     head: {
       htmlAttrs: {
         lang: "ru"
