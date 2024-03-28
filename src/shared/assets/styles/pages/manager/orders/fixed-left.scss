@@ -1,0 +1,28 @@
+.fixed-left-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  .orders-block {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    &-1 {
+      &__sort-buttons {
+        display: flex;
+        gap: 5px;
+        flex-wrap: wrap;
+      }
+    }
+    &-2 {
+      &__buttons {
+        width: 100%;
+        display: flex;
+        gap: 15px;
+        > * {
+          flex: 1 1 auto;
+        }
+      }
+    }
+  }
+}
