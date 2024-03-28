@@ -7,7 +7,7 @@ export default defineNuxtConfig({
     enabled: true
   },
   nitro: {
-    preset: 'node-server',
+    // preset: 'node-server',
   },
   srcDir: "src",
   devServer: {
