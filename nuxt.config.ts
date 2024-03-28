@@ -3,6 +3,7 @@ const PORT = Number(process.env.APP_PORT) || 3000;
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  ssr: true,
   devtools: {
     enabled: true
   },
