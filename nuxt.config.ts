@@ -109,9 +109,6 @@ export default defineNuxtConfig({
       }
     }
   },
-
-  ssr: false,
-
   components: false,
 
   dir: {
