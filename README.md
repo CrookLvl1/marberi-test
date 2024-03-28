@@ -24,6 +24,8 @@ fixed-left.scss <br />
 [id_orders].vue <br />
 index.vue <br />
 
+### Вынужденно был изменён путь к изображению в компоненте ~/shared/ui/empty/index.vue (Ошибка при деплое)
+
 
 ## Setup
 
