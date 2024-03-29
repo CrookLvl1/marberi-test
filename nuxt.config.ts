@@ -47,7 +47,6 @@ export default defineNuxtConfig({
   },
 
   app: {
-    
     head: {
       htmlAttrs: {
         lang: "ru"
@@ -64,17 +63,16 @@ export default defineNuxtConfig({
       ],
 
       link: [
-        { rel: "icon", type: "image/x-icon", href: "/lk/favicon.ico" },
+        { rel: "icon", type: "image/x-icon", href: "/public/favicon.ico" },
         { rel: "stylesheet", href: "/lk/fonts/open-sans-regular/stylesheet.css" },
         { rel: "stylesheet", href: "/lk/fonts/open-sans-semibold/stylesheet.css" },
         { rel: "stylesheet", href: "/lk/fonts/pt-sans-regular/stylesheet.css" },
         { rel: "stylesheet", href: "/lk/fonts/FuturaPT-Bold/stylesheet.css" },
         { rel: "stylesheet", href: "/lk/fonts/fontawesome/stylesheet.css" }
       ]
-    },
+    }
     // baseURL: "/lk/",
     // cdnURL: "/lk/"
-    
   },
 
   css: ["~/shared/assets/styles/main.scss"],
