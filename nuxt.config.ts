@@ -3,22 +3,9 @@ const PORT = Number(process.env.APP_PORT) || 3000;
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  ssr: true,
+  ssr: false,
   devtools: {
     enabled: true
-  },
-  hooks: {
-    "vite:extendConfig"(config, { isClient }) {
-      if (process.env.NODE_ENV !== "development" && isClient) {
-        //  @ts-ignore
-        config.build.rollupOptions.output.chunkFileNames = "_nuxt/[hash].js";
-        //  @ts-ignore
-        config.build.rollupOptions.output.entryFileNames = "_nuxt/entry.[hash].js";
-      }
-    }
-  },
-  nitro: {
-    // preset: 'node-server',
   },
   srcDir: "src",
   devServer: {
